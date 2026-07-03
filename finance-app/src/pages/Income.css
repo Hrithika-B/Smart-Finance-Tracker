@@ -1,0 +1,149 @@
+.income-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.income-title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.income-page p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* TOTAL CARD */
+.income-total-card {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 20px;;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.income-total-card h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* FORM */
+.income-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.income-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+.income-form input:focus {
+  border-color: #0072ff;
+}
+
+.income-form button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.income-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* LIST */
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.income-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.income-card:hover {
+  transform: translateY(-3px);
+}
+
+.income-left h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.income-left span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* RIGHT SIDE */
+.income-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.income-right p {
+  color: green;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+  transform: scale(1.05);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+/* EMPTY */
+.empty-text {
+  text-align: center;
+  color: gray;
+}
+.income-header h2 {
+  color: green;
+}

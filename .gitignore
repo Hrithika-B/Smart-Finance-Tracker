@@ -1,0 +1,10 @@
+node_modules/
+backend/node_modules/
+finance-app/node_modules/
+
+.env
+backend/.env
+finance-app/.env
+
+dist/
+build/
