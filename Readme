@@ -1,58 +1,200 @@
-# Personal Finance Tracker
+# 💰 Smart Finance Tracker
 
-A full-stack Personal Finance Tracker web application that helps users manage their daily expenses, monthly budget, and savings goals with visual analytics.
-
----
-
-##  Features
-
--  User Authentication (Login / Signup with JWT)
--  Add, Edit, Delete Expenses
--  Month-wise Expense Filtering
--  Visual Charts (Pie, Donut, Bar Graphs)
--  Monthly Budget Management
--  Short-term & Long-term Goals
--  Dashboard with Analytics
--  PDF Report Download
--  User Profile with Photo Upload
--  CSV Auto Import of Expenses
+A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application that helps users efficiently manage their personal finances by tracking income, expenses, budgets, and financial activities through an intuitive dashboard.
 
 ---
 
-## 🛠 Technologies Used
+## 📌 Project Overview
 
-### Frontend:
-- React.js  
-- React Router  
-- Chart.js + react-chartjs-2  
-- Papaparse (CSV Import)  
-- html2canvas & jsPDF (PDF Reports)  
-- CSS (Custom Styling)
+Smart Finance Tracker is designed to simplify personal finance management by allowing users to securely record their income and expenses, monitor their financial balance, and analyze spending patterns. The application provides a responsive interface, secure authentication, and real-time updates to help users make better financial decisions.
 
-### Backend:
-- Node.js  
-- Express.js  
-- MongoDB + Mongoose  
-- JWT Authentication  
-- Multer / Base64 for Image Upload  
+---
+
+## ✨ Features
+
+* 🔐 Secure User Authentication (JWT)
+* 👤 User Registration and Login
+* 💰 Add, Edit, and Delete Income
+* 💸 Add, Edit, and Delete Expenses
+* 📊 Interactive Financial Dashboard
+* 📈 Income & Expense Analytics
+* 📂 Category-wise Expense Management
+* 📝 Transaction History
+* 🔍 Search and Filter Transactions
+* 📱 Responsive User Interface
+* ⚡ Real-Time Data Updates
+* 🗄️ Secure MongoDB Database Integration
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Bootstrap / Tailwind CSS (based on project setup)
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* JWT Authentication
+* bcrypt.js
+* Mongoose
+
+### Database
+
+* MongoDB
 
 ---
 
 ## 📂 Project Structure
 
-MyServe/
-│
-├── frontend/
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── components/
-│ │ ├── App.js
-│ │ └── index.css
+```text
+Smart-Finance-Tracker/
 │
 ├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ ├── config/
-│ └── server.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   └── app.js
+│
+├── finance-app/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🚀 Current Working
+
+The application currently supports:
+
+* User Registration and Login
+* Secure JWT Authentication
+* Dashboard displaying financial summary
+* Income Management
+* Expense Management
+* Transaction History
+* Category-wise Expense Tracking
+* CRUD Operations (Create, Read, Update, Delete)
+* Secure MongoDB Data Storage
+* Responsive Web Interface
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Hrithika-B/Smart-Finance-Tracker.git
+```
+
+### Navigate to the Project
+
+```bash
+cd Smart-Finance-Tracker
+```
+
+### Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### Install Frontend Dependencies
+
+```bash
+cd ../finance-app
+npm install
+```
+
+---
+
+## ▶️ Run the Application
+
+### Start Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start Frontend
+
+```bash
+cd finance-app
+npm start
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+or the port configured in your frontend.
+
+---
+
+## 🗄️ Database
+
+* MongoDB
+* Mongoose ODM
+* Environment variables configured through `.env`
+
+Example:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=3000
+```
+
+---
+
+## 🔒 Security
+
+* JWT Authentication
+* Password Encryption using bcrypt
+* Protected API Routes
+* Environment Variable Configuration
+
+---
+
+## 🎯 Future Enhancements
+
+* 🤖 AI-Based Financial Insights
+* 📅 Bill Payment Reminders
+* 📊 Advanced Analytics Dashboard
+* 📤 Export Reports (PDF & Excel)
+* 🌙 Dark Mode
+* 💳 Bank API Integration
+* 🔔 Email & Push Notifications
+* 📱 Mobile Application
+
+---
+
+## 👩‍💻 Author
+
+**Hrithika B**
+
+GitHub: https://github.com/Hrithika-B
+
+---
+
+## 📄 License
+
+This project is created for learning, academic purposes, and portfolio demonstration.
